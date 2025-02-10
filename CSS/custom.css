@@ -1,0 +1,228 @@
+/* Universal selector */
+* {
+    color: red;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    
+}
+ /* tag / element selector */
+ h1 {
+    color: green;
+
+    text-align: center;
+    margin: 50px 0px;
+ }
+
+ /* attribute selector */
+
+ a[title="google"] {
+    color: blue;
+    letter-spacing: 10px;
+ }
+
+ /* ID Selector */
+ #idOne {
+   color: brown;
+ }
+
+  /* Class Selector */
+
+  .classOne {
+   color: brown;
+   text-transform: uppercase;
+   text-indent: 40px;
+   line-height: 25px;
+   word-spacing: 25px;
+  }
+
+  .desc a{
+   color: blue;
+   text-decoration: dotted;
+  }
+
+  .child > a{
+   color: green;
+  }
+
+  /* pseudo selector */
+
+  a:link {
+   color: red;
+  }
+
+  a:hover {
+   color: green;
+  }
+
+  a:visited {
+   color: blue;
+  }
+
+  a:active {
+   color: yellow;
+  }
+
+  /* target */
+
+  :target {
+   color: red;
+   border: 2px solid black;
+  }
+
+  /* border */
+  .borderOne {
+   border: 20px dashed blue;
+  }
+
+  .borderTwo {
+   border-left: 30px solid purple;
+  }
+
+  .borderSizeOne {
+   border-style: solid;
+   border-width: 10px;
+   /* T R B L */
+   border-width: 10px 100px;
+   /* T&B /L&R */
+   border-width: 10px 5px 110px;
+   /* T  L&R B  */
+   border-width: 1px 15px 20px 30px;
+   /* T R B L; */
+  }
+.borderStyle {
+   border-style: solid dashed double dotted;
+   border-color: red blue;
+}
+
+/* Margin */
+.margin {
+   border: 1px solid black;
+   margin: 100px;
+}
+
+/* padding */
+
+.padding {
+   border: 1px solid red;
+   padding: 100px;
+}
+
+/* inline */
+
+.inline {
+   border: 2px solid rgb(152, 152, 221);
+   width: 100px;
+   display: inline-block;
+}
+.block {
+   border: 2px solid black;
+   width: 100px;
+   display: inline-block;
+}
+
+/* Float */
+
+.float_left img {
+   width: 40%;
+   float: left;
+}
+
+.clear {
+   clear: both;
+}
+
+.float_right img {
+   width: 40%;
+   float: right;
+}
+
+/* grid */
+
+.gridOne div,.gridTwo div,.gridThree div,.gridFour div,.gridFive div,.gridSix div {
+   padding: 20px;
+   color: white;
+   text-align: center;
+}
+.gridOne,.gridTwo,.gridThree,.gridFour,.gridFive,.gridSix {
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+
+.gridTwo {
+   grid-column-gap: 50px;
+}
+.gridThree {
+   grid-row-gap: 30px;
+}
+.gridFour {
+   grid-gap: 30px;
+   /* grid-row-gap: 30px;
+   grid-column-gap: 50px; */
+}
+.columnadd {
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+.rowadd {
+   grid-column-start: 2;
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+/* Position */
+
+.relative_parent {
+   border: 2px solid red;
+   width: 1000px;
+   height: 500px;
+}
+
+.relative {
+   border: 2px solid green;
+   width: 500px;
+   height: 200px;
+   position: relative;
+   top: 100px;
+   left: 150px;
+}
+
+.absolute_parent {
+   border: 2px solid yellow;
+   width: 1000px;
+   height: 500px;
+   position: relative;
+}
+.absolute {
+   border: 2px solid green;
+   width: 200px;
+   height: 300px;
+   position: absolute;
+   top: 100px;
+   right: 30px;
+}
+.fixed {
+   position: fixed;
+   top: 100px;
+   right: 100px;
+}
+
+
+
+ .onlineFont {
+   font-family: "Roboto", serif;
+   font-optical-sizing: auto;
+   font-weight: weight;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100;
+ }
+
+ @font-face {
+   font-family: myfont;
+   src: url(Raleway/Raleway-Italic-VariableFont_wght.ttf);
+ }
+
+ .offlineFont {
+   font-family: myfont;
+ }

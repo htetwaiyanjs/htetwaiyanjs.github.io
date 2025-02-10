@@ -1,0 +1,68 @@
+#mybody {
+    background-color: rgb(148, 148, 231);
+}
+.heading {
+    text-align: center;
+    color: red;
+}
+#myForm {
+    width: 40%;
+    margin: auto;
+}
+
+input[type="text"],input[type="email"],input[type="date"],input[type="number"],#education {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="date"]:focus,input[type="number"]:focus,input[type="text"]:focus,#education:focus {
+    border: 7px solid gray;
+}
+
+input[type="radio"]:checked +label {
+    color: red;
+    letter-spacing: 10px;
+}
+
+input[type="checkbox"]:enabled + label {
+    color: red;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+    color: green;
+    font-style: normal;
+}
+input[type="checkbox"]:disabled + label {
+    color: gray;
+}
+ul li:first-child {
+    background-color: yellow;
+}
+
+ul li:last-child {
+    background-color: yellow;
+}
+
+ul li:nth-child(5) {
+    background-color: green;
+}
+
+p:empty {
+    height: 20px;
+    background-color: black;
+}
+
+.register_btn {
+    width: 150px;
+    height: 43px;
+    border-radius: 5px;
+}
+
+.register_btn:hover {
+   background-color: black;
+   color: white;
+   cursor:pointer
+}

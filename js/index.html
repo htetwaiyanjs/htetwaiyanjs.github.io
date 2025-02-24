@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Scroll Pages</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, sans-serif; }
+        
+        .container {
+            height: 100vh;
+            overflow: hidden;
+            scroll-snap-type: y mandatory;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            scroll-snap-align: start;
+        }
+        .page1 { background: lightblue; }
+        .page2 { background: lightcoral; }
+        .page3 { background: lightgreen; }
+        
+        /* Indicator */
+        .indicator {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: gray;
+            border-radius: 50%;
+            margin: 10px 0;
+            transition: 0.3s;
+        }
+        .active { background: black; }
+    </style>
+</head>
+<body>
+
+<div class="indicator">
+    <div class="dot active" data-index="0"></div>
+    <div class="dot" data-index="1"></div>
+    <div class="dot" data-index="2"></div>
+</div>
+
+<div class="container">
+    <section class="page1">Page 1</section>
+    <section class="page2">Page 2</section>
+    <section class="page3">Page 3</section>
+</div>
+
+<script>
+    const sections = document.querySelectorAll("section");
+    const dots = document.querySelectorAll(".dot");
+
+    window.addEventListener("scroll", () => {
+        let currentIndex = 0;
+        
+        sections.forEach((section, index) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                currentIndex = index;
+            }
+        });
+
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[currentIndex].classList.add("active");
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+
+    <script>
+        let firstName = "Developer";
+        let lastName = "Htet Wai Yan";
+        console.log(firstName,lastName);
+        console.log(lastName.length);
+
+
+        let fullname = firstName + " " + lastName;
+        console.log(fullname);
+
+
+        console.log('My name is' + fullname);
+
+        document.write(fullname + '<br>');
+
+        document.write(firstName + '<b>' + lastName + '</b><br>');
+
+        document.write(`${firstName} <b> ${lastName} </b><br>`);
+        document.write(`My name is ${fullname},I am 19 years old.<br>`);
+        document.write(firstName.toUpperCase()+"<br>");
+        document.write(firstName.toLowerCase()+"<br>");
+
+        document.write(fullname.substr(10,4)+'<br>');//cut
+
+
+        let myjob = "      Senior          Developer            "; //No space
+        document.write(myjob.trim()+'<br>');
+
+
+        let ser = "I Like Javascript";
+
+        document.write(ser.search('Java')+"<br>");
+
+
+        let rep = "I want to visit Mandalay";
+        document.write(rep.replace("Mandalay","Yangon" +'<br>')); //replace
+
+        document.write('I\'m Htet WAi YAn'+'<br>');
+        document.write("I'm Htet Wai Yan,My height is 5'6\"");
+        document.write(`I'm Htet Wai Yan,My height is 5'6"`);
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>

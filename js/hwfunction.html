@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let secretNumber = 18;
+
+        let guessNumber = Number(prompt('Enter a Number between 1 to 20'));
+
+        var time = 1;
+
+        while (secretNumber != guessNumber) {
+
+        if (guessNumber < secretNumber) {
+            alert('Your Number is lower,try agian');
+        }else {
+            alert('Your Number is higher,try agian');
+        }
+       
+        time += 1;
+        guessNumber = Number(prompt('Enter a Number between 1 to 20'));
+
+
+
+        }
+
+        
+        if(secretNumber == guessNumber) {
+            
+            
+            document.write('Your  Number is Correct <br>');
+           
+            document.write(`<i>Your Playing time is ${time}<i>`);
+
+        }else {
+            
+        }
+        
+
+
+  
+
+    </script>
+</body>
+</html>

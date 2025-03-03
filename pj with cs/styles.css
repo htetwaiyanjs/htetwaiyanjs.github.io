@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* height: 10vh; */
+    /* background-color: rgb(108, 172, 228); */
+    
+    
+}
+
+body{
+  background-color: #5DADEC;
+  height: 100vh;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 10px;
+    align-items: center;
+    /* background-color: #74ACDF; */
+    /* background-color: #1E2A78; */
+    /* background-color: #5DADEC; */
+    background-color: #FFD700;
+}
+
+.navFirst {
+    display: flex;
+    align-items: center;
+    
+}
+
+.sec {
+   display: flex;
+   align-items: center;
+   border: 2px solid #1E2A78;
+   justify-content: space-evenly;
+}
+
+.sec-img {
+    width: 100px;
+    height: 70px;
+}
+.sec-h2 {
+   font-weight: bolder;
+   font-size: 30px;
+}
+
+
+div img {
+    width: 75px;
+    height: 65px;
+    
+}
+
+.arg {
+    letter-spacing: 5px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navSec ul {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    /* display: flex; */
+    gap: 10px;
+    justify-content: end;
+    
+}
+
+ul li {
+   
+   
+    list-style-type: none;
+}
+
+ul li a {
+   text-decoration: none;
+   padding: 15px;
+   font-size: 20px;
+}
+
+ul li a:hover {
+   color: white;
+   background-color: rgb(108, 172, 228);
+ }
+
+ .container{
+    margin-top: 25px;
+ }
+
+
+ .container-item img {
+    float: left;
+    width: 40%;
+    height: 550px;
+    margin-right: 20px;
+ }
+ .h1 {
+   color: #74ACDF;
+ }
+
+ .p {
+  text-indent: 50px;
+  color: white;
+}
+
+ .clear {
+    clear: both;
+ }
+
+ .card-container {
+    
+    width: 100%;
+    max-width: 1500px;
+    overflow: hidden;
+    
+ }
+
+ .card-containerList {
+   margin-top: 25px;
+   display: flex;
+   width: 200%;
+   animation: slide 60s infinite linear;
+
+ }
+ .card {
+    width: 350px;
+    
+    border: 2px solid black;
+    margin: 0px 25px;
+    
+ }
+
+ .card-img{
+    width: 350px;
+    height: 380px;
+    border: 2px solid black;
+    box-sizing: border-box;
+ }
+
+ .card-content {
+   color: white;
+   text-align: center;
+   font-weight: bolder;
+ }
+
+ @keyframes slide {
+    0% {transform: translateX(0);}
+    10% {transform: translateX(-10%);}
+    20% {transform: translateX(-20%);}
+    30% {transform: translateX(-30%);}
+    40% {transform: translateX(-40%);}
+    50% {transform: translateX(-50%);}
+    60% {transform: translateX(-60%);}
+    70% {transform: translateX(-70%);}
+    80% {transform: translateX(-80%);}
+    90% {transform: translateX(-90%);}
+    100% {transform: translateX(-100%);}
+    
+ }
+
+ iframe{
+    border: none;
+ }

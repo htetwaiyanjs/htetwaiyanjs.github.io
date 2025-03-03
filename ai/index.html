@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Indicator</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Scrollable container styles */
+        .container {
+            width: 100%;
+            height: 300vh; /* Make the page long enough to scroll */
+            padding-top: 100px;
+            position: relative;
+        }
+
+        /* Sections (Pages) */
+        .page {
+            height: 100vh; /* Each page takes up the full height of the viewport */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .page1 {
+            background-color: #f2f2f2;
+        }
+
+        .page2 {
+            background-color: #dcdcdc;
+        }
+
+        .page3 {
+            background-color: #b0b0b0;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            background-color: #ccc;
+            height: 80%;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .indicator {
+            width: 100%;
+            background-color: #2196F3;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            transition: all 0.2s ease;
+        }
+
+        /* Indicator progress bar adjustment based on scroll */
+        .page1:target ~ .scroll-indicator .indicator {
+            height: 33%;
+            background-color: #FF6347; /* Red for Page 1 */
+        }
+
+        .page2:target ~ .scroll-indicator .indicator {
+            height: 66%;
+            background-color: #FF8C00; /* Orange for Page 2 */
+        }
+
+        .page3:target ~ .scroll-indicator .indicator {
+            height: 100%;
+            background-color: #32CD32; /* Green for Page 3 */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="page page1" id="page1">
+            <h2>Page 1</h2>
+            <p>This is the first page.</p>
+            <a href="#page2">Go to Page 2</a>
+        </div>
+        <div class="page page2" id="page2">
+            <h2>Page 2</h2>
+            <p>This is the second page.</p>
+            <a href="#page3">Go to Page 3</a>
+        </div>
+        <div class="page page3" id="page3">
+            <h2>Page 3</h2>
+            <p>This is the third page.</p>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="indicator"></div>
+    </div>
+
+</body>
+</html>

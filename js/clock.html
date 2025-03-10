@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+
+    <style>
+        #father{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      #container {
+        width: 220px;
+        height: 200px;
+        border: 2px solid black;
+        box-shadow: 2px;
+        background-color: black;
+        border-radius: 10px;
+      }
+
+      #top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: cyan;
+        font-size: 20px;
+      }
+
+      #mid{
+        font-size: 30px;
+        font-weight: bold;
+        color: cyan;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      #under{
+        color: cyan;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+</head>
+<body>
+  <div id="father">
+    <div id="container">
+       
+        <div id="top">
+            <span id="mon">Jan</span> <span id="spdate">00</span>, <span id="spyear">2000</span> <br>
+        </div>
+
+      <div id="mid">
+        <span id='sphour'>00</span> : <span id='spmin'>00</span> : <span id='spsec'>00</span>   <span id="spam">AM<br>
+      </div>
+
+        <div id="under">
+            <span id="spday">Mon</span></span> 
+        </div>
+    </div>
+  </div>
+
+
+
+    <script>
+
+        setInterval(clock,1000);
+
+     function clock(){
+        let date = new Date();
+        let year = date.getFullYear();
+        let day = date.getDay()+1;
+        let dat = date.getDate();
+        let month = date.getMonth()+1;
+        let hours = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        // console.log(date);
+
+        let mon = document.getElementById('mon');
+        mon.innerHTML = month;
+
+        let spdate = document.getElementById('spdate');
+        spdate.innerHTML = dat;
+
+        let spyear = document.getElementById('spyear');
+        spyear.innerHTML = year;
+
+        let sphour = document.getElementById('sphour');
+        sphour.innerHTML = hours;
+
+        let spmin = document.getElementById('spmin');
+        spmin.innerHTML = min;
+
+        let spsec = document.getElementById('spsec');
+        spsec.innerHTML = sec;
+
+        let spday = document.getElementById('spday');
+        spday.innerHTML = day;
+
+        let spam = document.getElementById('spam');
+       
+
+        if(hours < 12) {
+            spam.innerHTML = "AM";
+        }else{
+            spam.innerHTML = 'PM';
+        }
+
+
+        let arrmon = ['Jan','Feb',"Mar",'Apr','May',"Jun","Jul",'Aug',"Sep","Oct",'Nov',"Dec"];
+
+        // for(let i=0;i<arrmon.length;i++){
+
+        // }
+        if(day==1){
+            mon.innerHTML = "jan";
+        }else if(month==2){
+            mon.innerHTML = "Feb";
+        }else if(month==3) {
+            mon.innerHTML = "Mar";
+        }else if(month==4){
+            mon.innerHTML = "Apr";
+        }else if(month==5){
+            mon.innerHTML = "May";
+        }else if(month==6){
+            mon.innerHTML = 'Jun';
+        }else if(month==7){
+            mon.innerHTML = 'Jul';
+        }else if(month==8){
+            mon.innerHTML = 'Aug';
+        }else if(month==9){
+            mon.innerHTML = 'Sep';
+        }else if(month==10){
+            mon.innerHTML = 'Oct';
+        }else if(month==11){
+            mon.innerHTML = 'Nov';
+        }else if(month==12){
+            mon.innerHTML = 'Dec';
+        }
+
+        
+         if(day==1){
+            spday.innerHTML = "Sun";
+        }else if(day==2){
+            spday.innerHTML = "Mon";
+        }else if(day==3) {
+            spday.innerHTML = "Tue";
+        }else if(day==4){
+            spday.innerHTML = "Wed";
+        }else if(day==5){
+            spday.innerHTML = "Thu";
+        }else if(day==6){
+            spday.innerHTML = 'Fri';
+        }else if(day==7){
+            spday.innerHTML = 'Sat';
+        }
+
+        if(sec<10){
+            spsec.innerHTML = "0"+sec;
+        }
+
+        if(hours<10){
+            sphour.innerHTML = "0"+hours;
+        }
+
+        
+        if(min<10){
+            spmin.innerHTML = "0"+min;
+        }
+
+        
+        if(hours>12){
+            sphour.innerHTML = hours-=12;
+        }
+     }
+        
+    </script>
+</body>
+</html>

@@ -124,6 +124,7 @@ $(document).ready(function(){
 
     $(".logout").click(function(){
         localStorage.removeItem('data')
+        localStorage.removeItem('shop')
 
         let dataString = localStorage.getItem('data');
 

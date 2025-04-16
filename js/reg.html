@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myForm">
+        <input type="text" name="name" id="name"> <br><br>
+        <input type="number" name="age" id="age"><br><br>
+        <textarea name="address" id="address"></textarea><br><br>
+        <button type="button" onclick="button()">Register</button>
+
+
+
+        <table border="1" cellspacing="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                </tr>
+               
+            </thead>
+
+            <tbody id="myBody">
+
+            </tbody>
+        </table>
+    </form>
+
+
+    <script>
+        var student_list = [];
+     
+        
+      function button() {
+        let name = document.myForm.name.value;
+        let age = document.myForm.age.value;
+        let address = document.myForm.address.value;
+        let myBody = document.getElementById('myBody');
+        // console.log(html);
+        
+        
+        // console.log(address);
+
+        let obj= {
+           student_name :name, 
+           student_age :age,
+           student_address :address,
+        }
+
+        student_list.push(obj);
+        console.log(student_list);
+
+        // console.log(obj);
+        
+      
+        
+        btn()
+      
+       
+
+        // console.log(html);
+
+        
+        
+      }
+
+
+      function btn(){
+                var html='';
+
+        for (let i=0;i<student_list.length;i++) {
+
+        
+            html += `
+        <tr>
+            <td>${i+1}</td>
+            <td>${student_list[i].student_name}</td>
+            <td>${student_list[i].student_age}</td>
+            <td>${student_list[i].student_address}</td>
+        </tr>`
+
+        myBody.innerHTML= html
+        }
+
+      }
+        
+    </script>
+</body>
+</html>

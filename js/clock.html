@@ -73,9 +73,9 @@
      function clock(){
         let date = new Date();
         let year = date.getFullYear();
-        let day = date.getDay()+1;
+        let day = date.getDay();
         let dat = date.getDate();
-        let month = date.getMonth()+1;
+        let month = date.getMonth();
         let hours = date.getHours();
         let min = date.getMinutes();
         let sec = date.getSeconds();
@@ -113,52 +113,60 @@
 
 
         let arrmon = ['Jan','Feb',"Mar",'Apr','May',"Jun","Jul",'Aug',"Sep","Oct",'Nov',"Dec"];
+        let addmon = arrmon[month];
 
+        // console.log(addmon);
+        
+        mon.innerHTML = addmon;
+
+        let arrday = ['Sun','Mon','Tue','Wed','Thu','Fri',"Sat"]
+        let addday = arrday[day];
+        spday.innerHTML=addday;
         // for(let i=0;i<arrmon.length;i++){
 
         // }
-        if(day==1){
-            mon.innerHTML = "jan";
-        }else if(month==2){
-            mon.innerHTML = "Feb";
-        }else if(month==3) {
-            mon.innerHTML = "Mar";
-        }else if(month==4){
-            mon.innerHTML = "Apr";
-        }else if(month==5){
-            mon.innerHTML = "May";
-        }else if(month==6){
-            mon.innerHTML = 'Jun';
-        }else if(month==7){
-            mon.innerHTML = 'Jul';
-        }else if(month==8){
-            mon.innerHTML = 'Aug';
-        }else if(month==9){
-            mon.innerHTML = 'Sep';
-        }else if(month==10){
-            mon.innerHTML = 'Oct';
-        }else if(month==11){
-            mon.innerHTML = 'Nov';
-        }else if(month==12){
-            mon.innerHTML = 'Dec';
-        }
+        // if(month==1){
+        //     mon.innerHTML = "jan";
+        // }else if(month==2){
+        //     mon.innerHTML = "Feb";
+        // }else if(month==3) {
+        //     mon.innerHTML = "Mar";
+        // }else if(month==4){
+        //     mon.innerHTML = "Apr";
+        // }else if(month==5){
+        //     mon.innerHTML = "May";
+        // }else if(month==6){
+        //     mon.innerHTML = 'Jun';
+        // }else if(month==7){
+        //     mon.innerHTML = 'Jul';
+        // }else if(month==8){
+        //     mon.innerHTML = 'Aug';
+        // }else if(month==9){
+        //     mon.innerHTML = 'Sep';
+        // }else if(month==10){
+        //     mon.innerHTML = 'Oct';
+        // }else if(month==11){
+        //     mon.innerHTML = 'Nov';
+        // }else if(month==12){
+        //     mon.innerHTML = 'Dec';
+        // }
 
         
-         if(day==1){
-            spday.innerHTML = "Sun";
-        }else if(day==2){
-            spday.innerHTML = "Mon";
-        }else if(day==3) {
-            spday.innerHTML = "Tue";
-        }else if(day==4){
-            spday.innerHTML = "Wed";
-        }else if(day==5){
-            spday.innerHTML = "Thu";
-        }else if(day==6){
-            spday.innerHTML = 'Fri';
-        }else if(day==7){
-            spday.innerHTML = 'Sat';
-        }
+        //  if(day==1){
+        //     spday.innerHTML = "Sun";
+        // }else if(day==2){
+        //     spday.innerHTML = "Mon";
+        // }else if(day==3) {
+        //     spday.innerHTML = "Tue";
+        // }else if(day==4){
+        //     spday.innerHTML = "Wed";
+        // }else if(day==5){
+        //     spday.innerHTML = "Thu";
+        // }else if(day==6){
+        //     spday.innerHTML = 'Fri';
+        // }else if(day==7){
+        //     spday.innerHTML = 'Sat';
+        // }
 
         if(sec<10){
             spsec.innerHTML = "0"+sec;

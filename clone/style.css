@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    
+}
+
+.img{
+    width: 60px;
+    height: 60px;
+}
+
+.h2 {
+    letter-spacing: 2px;
+    margin-left: 15px;
+}
+
+.navMenu ul{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 15px;
+    justify-content: end;
+    
+   
+}
+
+
+.navMenu ul li{
+  list-style-type: none; 
+  
+}
+
+
+.navMenu ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  align-items: center;
+  
+}
+
+  .navMenu ul li a:hover{
+    color: white;
+    background: black;
+}
+
+
+.heroContainer {
+    background-image: url('../clone/images/images/hero-image.jpg');
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+
+.content{
+    font-size: 2em;
+    color: white;
+}
+
+.content p{
+    margin: 20px 0;
+}
+
+.content p a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: pink;
+    padding: 20px 30px;
+    border-radius: 10px;
+}

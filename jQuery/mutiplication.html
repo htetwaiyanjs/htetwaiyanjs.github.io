@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number:: <input type="number" name="" id="num">
+    <button id="mutiply">Mutilpy</button>
+
+
+    <table>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#mutiply').click(function(){
+                let number = $('#num').val();
+
+                console.log(number);
+
+                let data =''
+                for(let i = 0;i < 13; i++){
+                    let result = number * i;
+                    console.log(result);
+                    data += `<tr>
+                             <td>${number} x ${i}</td>
+                             <td>=</td>
+                             <td>${result}</td>
+                             </tr>`
+
+                             $("tbody").html(data)
+                    
+                }
+            })
+          
+            
+        })
+    </script>
+</body>
+</html>

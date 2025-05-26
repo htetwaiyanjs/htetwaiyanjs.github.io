@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesomepro/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navclone">
+
+        <div class="container-fluid con">
+           <img src="img/logo.jpg" alt="" width="90" class="rounded-circle ">
+
+           <button class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <div id="navbar" class="collapse navbar-collapse">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item me-2 ms-auto">
+                    <a href="" class="nav-link"><i class="fas fa-home-lg fa-lg"></i>Home</a>
+                </li>
+               
+                <li class="nav-item me-2 ms-auto">
+                    <a href="" class="nav-link"><i class="fad fa-user fa-lg"></i>About</a>
+                </li>
+                <li class="nav-item me-2 ms-auto">
+                    <a href="" class="nav-link"><i class="fad fa-phone fa-lg"></i>Contact</a>
+                </li>
+                <li class="nav-item me-2 ms-auto">
+                    <a href="" class="nav-link"><i class="fad fa-shopping-cart fa-lg"></i><span class="cart_noti cart">0</span></a>
+                </li>
+
+                <li class="nav-item me-2 ms-auto">
+                    <a href="" class="nav-link"><i class="fad fa-search fa-lg"></i></a>
+                </li>
+
+                <li class="nav-item me-2 ms-auto">
+                    <a href="#" class="nav-link logout"><i class="far fa-sign-out-alt fa-lg"></i>LogOut</a>
+                </li>
+
+            </ul>
+
+           </div>
+        </div>
+
+    </nav>
+
+    <div class="colorcus">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="weather-container">
+    
+                        
+    
+                    </div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <div class="cardclone">
+    
+                        <h3 class="clock">00:00:00 <span class="clone">AM</span></h3>
+
+                      <div class="first d-none">
+                        <h3>"Good morning, sir. It's time for your breakfast."</h3>
+                        <div class="floatclone">
+                            <img src="img/eikyar.jpeg" alt="">
+                            <h4><a href="#bf" class="text-light mt-3">"To view the available food items for breakfast....."</a></h4>
+                        </div>
+                      </div>
+                        <div class="two d-none">
+                          <h3>""Good afternoon, Sir/Madam. It's now time for your lunch."."</h3>
+                          <div class="floatclone">
+                              <img src="img/hambugger.jpeg" alt="" class="h-75">
+                              <h4><a href="#lun" class="text-light mt-3">"To view the available food items for Lunch....."</a></h4>
+                          </div>
+                        </div>
+
+                          <div class="third d-none">
+                            <h3>""Good evening! It's that time of the day—time to unwind with a glass of alcohol.""</h3>
+                            <div class="floatclone">
+                                <img src="img/warhorse.jpg" alt="" class="w-50 h-75 mt-3">
+                                <h4><a href="#alc" class="text-light mt-5">"To view the available food items for Alcohol....."</a></h4>
+                            </div>
+
+                          </div>
+                         
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+         
+          <div class="container my-5">
+              <h4 class="mb-0 pb-0">Best Seller</h4>
+              <hr class="divided pt-0 mt-1 mb-4">
+              <section class="customer-logos slider">
+                  <div class="slide card">
+                      <a href="detail.html"><img src="img/grandi.png" class ="w-100 h-100"></a>
+                      <p class="text-center">Grand Royal</p>
+                    
+                  </div>
+                  <div class="slide card">
+                      <img src="img/black175l.jpg" class ="w-100 h-100">
+                      <p class="text-center">Black Label</p>
+                      
+                  </div>
+                  <div class="slide card">
+                      <img src="img/pizza.jpeg" class ="w-100 h-100">
+                      <p class="text-center">Pizza</p>
+                    
+                  </div>
+                  <div class="slide card">
+                      <img src="img/royald.jpg" class ="w-100 h-100">
+                      <p class="text-center">RoyalD</p>
+                      
+                  </div>
+                  <div class="slide card">
+                      <img src="img/shannoodles.png" class ="w-100 h-100">
+                      <p class="text-center">Shan Noodles</p>
+                      
+                  </div>
+                  <div class="slide card">
+                      <img src="img/abc.jpg" class ="w-100 h-100">
+                      <p class="text-center">ABC Beer</p>
+                      
+                  </div>
+                  <div class="slide card">
+                      <img src="img/marlar.jpeg "class ="w-100 h-100">
+                      <p class="text-center">Mala Shan-style Noodle</p>
+                    
+                  </div>
+
+                  
+                  
+              </section>
+          </div>
+
+          <div class="container bf d-none" id="bf">
+                <div class="row">
+
+                  <h3 class="mb-4">
+                      Breakfast Menu
+                  </h3>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/eikyar.jpeg" alt="" class="">
+                    <h5 >E Kya Kway  <span> //</span>  1200MMK</h5>
+                    <div class="view_detail">
+                      <a href="#" class="btn btn-danger btn-sm " data-id="1" data-kind="ekyarkway" data-price="1200"><i class="fad fa-shopping-cart"></i></a>
+                    </div> 
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/monkhin.jpg" alt="" class="w-100 mb-2">
+                    <h5 >Mohinga  <span> //</span>  2000MMK</h5> 
+                    <div class="view_detail">
+                      <a href="#" class="btn btn-danger btn-sm " data-id="2" data-kind="mohinga" data-price="2000"><i class="fad fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/nanpyar.jpeg" alt="" class="">
+                    <h5 >Nan Pyar  <span> //</span>  1000MMK</h5>
+                    <div class="view_detail">
+                      <a href="#" class="btn btn-danger btn-sm " data-id="3" data-kind="nanpyar" data-price="1000"><i class="fad fa-shopping-cart"></i></a>
+                    </div> 
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/pizza.jpeg" alt="" class="">
+                    <h5 >Pizza <span> //</span>  15000MMK</h5> 
+                    <div class="view_detail">
+                      <a href="#" class="btn btn-danger btn-sm " data-id="4" data-kind="pizza" data-price="15000"><i class="fad fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/club-sandwich-cheese-cucumber-tomato-ham-eggs-67133765.jpg" alt="" class="w-100 h-75 mt-3">
+                    <h5 >Sandwich  <span> //</span>  10000MMK</h5> 
+                    <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm " data-id="5" data-kind="sandwich" data-price="10000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/ricefried.jpeg" alt="" class="mb-2">
+                    <h5 >Egg Fried Rice  <span> //</span>  2500MMK</h5> 
+                    <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm " data-id="6" data-kind="eggfriedrice" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/sgcf.jpeg" alt="" class="mt-3">
+                    <h5 >Singapore Cafe  <span> //</span>  3000MMK</h5>
+                    <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm " data-id="7" data-kind="sgcf" data-price="3000"><i class="fad fa-shopping-cart"></i></a>
+          </div> 
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                      <img src="img/blackcf.jpg" alt="" class="ms-2 w-75 mt-5">
+                    <h5 class="ms-5">Black Cafe  <span> //</span>  4500MMK</h5>
+                    <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm " data-id="8" data-kind="bcf" data-price="4500"><i class="fad fa-shopping-cart"></i></a>
+          </div> 
+                  </div>
+
+                </div> 
+          </div>
+          <div class="container lun d-none" id="lun">
+              <div class="row">
+
+              <h3 class="mb-4">
+                  Lunch Menu
+              </h3>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/chickendanpouk.jpeg" alt="" class="mt-2 w-100 h-75">
+                <h5 >Chicken Danbauk  <span> //</span>  5000MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="1" data-kind="chickendanpouk" data-price="5000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/marlar.jpeg" alt="" class="w-100 mb-2 h-75">
+                <h5 >Marlar Shan-Style Noodle  <span> //</span>  15000MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="2" data-kind="marlar" data-price="15000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/kyay_oo.jpg" alt="" class="w-100 h-75">
+                <h5>Kyay Oh  <span> //</span>  15000MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="3" data-kind="kyayoh" data-price="15000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/hambugger.jpeg" alt="" class="w-100 h-75">
+                <h5 >Hambugger <span> //</span>  19000MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="4" data-kind="hambugger" data-price="19000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/shannoodles.png" alt="" class="w-100 h-75 mt-1">
+                <h5 >Shannoodles  <span> //</span>  2500MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="5" data-kind="shannoodles" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/ricepound.jpeg" alt="" class="w-100 h-75">
+                <h5 >Egg Fried Rice  <span> //</span>  2500MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="6" data-kind="eggfriedrice" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/claypotmyeeshay.png" alt="" class=" w-100 h-75">
+                <h5 >MyeeShay  <span> //</span>  5500MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="7" data-kind="myeeShay" data-price="5500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+                  <img src="img/ship.jpg" alt="" class="ms-2 w-100 h-75">
+                <h5 class="ms-3">Fermented Roselle Leaves Salad  <span> //</span>  2500MMK</h5> 
+                <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="8" data-kind="ship" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+              </div>
+
+              </div> 
+      </div>
+      <div class="container alc d-none" id="alc">
+          <div class="row">
+
+          <h3 class="mb-4">
+              Alcohol Menu
+          </h3>
+
+          <div class="col-6 col-md-4 col-lg-3  new_arrival_img_hover">
+              <img src="img/abc.jpg" alt="" class="w-100 mt-4">
+            <h5 class="ms-2">ABC  <span> //</span>  6000MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="1" data-kind="abc" data-price="6000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover ">
+              <img src="img/black175l.jpg" alt="" class="w-100 h-75 mt-4">
+            <h5 class="mb-3">Black Label  <span> //</span>  35000MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="2" data-kind="blacklabel" data-price="35000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover ">
+              <img src="img/Gold-Label.jpg" alt="" class="w-100 mt-3">
+            <h5 >Gold Label  <span> //</span>  50000MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="3" data-kind="goldlabel" data-price="50000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover ">
+              <img src="img/cbber.jpg" alt="" class="w-100 h-75 mt-4">
+            <h5 >C Beer <span> //</span>  1500MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="4" data-kind="cbeer" data-price="1500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+              <img src="img/tapper.jpeg" alt="" class="w-100 h-75">
+            <h5 >Tapper  <span> //</span>  2500MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="5" data-kind="tapper" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+              <img src="img/tiger.jpg" alt="" class="mb-2 w-100 h-75">
+            <h5 >Tiger  <span> //</span>  4500MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="6" data-kind="tiger" data-price="4500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+              <img src="img/jack.jpg" alt="" class=" w-100 h-75">
+            <h5 >Jagermeilter  <span> //</span>  75000MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="7" data-kind="jagermeilter" data-price="75000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+              <img src="img/warhorse.jpg" alt="" class="ms-2 w-100 h-75">
+            <h5 class="ms-5">War Hosre <span> //</span>  3500MMK</h5> 
+            <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="8" data-kind="warhorse" data-price="3500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+          </div>
+
+          </div> 
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <h2>Available Menu</h2>
+
+          <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+            <img src="img/eikyar.jpeg" alt="" class="w-100 h-75">
+          <h5 >E Kya Kway  <span> //</span>  1200MMK</h5> 
+          <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="9" data-kind="ekyarkway" data-price="1200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+          <img src="img/ricefried.jpeg" alt="" class="w-100 h-75">
+        <h5 >Egg Rice Fried  <span> //</span>  2500MMK</h5> 
+        <div class="view_detail">
+          <a href="#" class="btn btn-danger btn-sm" data-id="10" data-kind="eggfriedrice" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+        <img src="img/ricepound.jpeg" alt="" class="w-100 h-75">
+      <h5 >Biryani Rice  <span> //</span>  5000MMK</h5> 
+       <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="11" data-kind="biryani" data-price="5000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+      <img src="img/marlar.jpeg" alt="" class="w-100 h-75">
+    <h5 >Marlar Shan-Style Noodle  <span> //</span>  12000MMK</h5> 
+     <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="12" data-kind="marlar" data-price="12000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+  </div>
+
+    <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+      <img src="img/shannoodles.png" alt="" class="w-100 h-75">
+    <h5 >Shan Noodle  <span> //</span>  2500MMK</h5> 
+     <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="13" data-kind="shannoodles" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+    <img src="img/ship.jpg" alt="" class="w-100 h-75">
+  <h5 >Fermented Roselle Leaves Salad   <span> //</span>  2500MMK</h5> 
+   <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="13" data-kind="fermented" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/club-sandwich-cheese-cucumber-tomato-ham-eggs-67133765.jpg" alt="" class="w-100 h-75">
+<h5 >Sandwich  <span> //</span>  15000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="14" data-kind="sandwich" data-price="15000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/hambugger.jpeg" alt="" class="w-100 h-75">
+<h5 >Hambugger  <span> //</span>  1800MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="15" data-kind="hambugger" data-price="18000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/hcanpra.png" alt="" class="w-100 h-75">
+<h5 >Hcanpra <span> //</span>  3200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="16" data-kind="hcanpra" data-price="3200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/nanpyar.jpeg" alt="" class="w-100 h-75">
+<h5 >NanPyar<span> //</span>  1200MMK</h5>
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="17" data-kind="nanpyar" data-price="1200"><i class="fad fa-shopping-cart"></i></a>
+          </div> 
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/kimchi-beef-stew-overhead-1024x1009-1.jpeg" alt="" class="w-100 h-75">
+<h5 >Kimchi Beef <span> //</span>  5000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="18" data-kind="kimchi-beef" data-price="5000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/chickendanpouk.jpeg" alt="" class="w-100 h-75">
+<h5 >Chicken Danpouk  <span> //</span>  5000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="19" data-kind="chickendanpouk" data-price="5000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/chicken-tomatoes-152833161-56a8c5cf3df78cf772a07a451.jpg" alt="" class="w-100 h-75">
+<h5 >Chicken tomato <span> //</span>  5500MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="20" data-kind="chicken-tomato" data-price="55000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/claypotmyeeshay.png" alt="" class="w-100 h-75">
+<h5 >MyeeShay  <span> //</span>  6000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="21" data-kind="myeeShay" data-price="6000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/kyay_oo.jpg" alt="" class="w-100 h-75">
+<h5 >kyay Oh  <span> //</span>  7000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="22" data-kind="kyay_oo" data-price="7000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/ship.jpg" alt="" class="w-100 h-75">
+<h5 >Fermented Roselle Leaves Salad  <span> //</span>  2500MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="23" data-kind="fermented" data-price="2500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/easy-szechuan-dan-dan-noodles-recipe-4845227-hero-01-18dee00c9b954621b9565deba7d0929a1.jpg" alt="" class="w-100 h-75">
+<h5 >Noodle  <span> //</span>  2200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="24" data-kind="noodle" data-price="2200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/yakimeshi-chahan-011_2048x.jpg" alt="" class="w-100 h-75">
+<h5 >Vermiceli  <span> //</span>  5500MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="27" data-kind="vermiceli" data-price="5500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/hambugger.jpeg" alt="" class="w-100 h-75">
+<h5 >Hambugger  <span> //</span>  7000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="28" data-kind="hambugger" data-price="7000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/monkhin.jpg" alt="" class="w-100 h-75">
+<h5 >Mohinga <span> //</span>  1200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="29" data-kind="mohinga" data-price="1200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/mevius.jpg" alt="" class="w-100 h-75">
+<h5 >Mevius  <span> //</span>  6500MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="30" data-kind="mevius" data-price="6500"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/gold.jpeg" alt="" class="w-100 h-75">
+<h5 >Gold  <span> //</span>  4200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm"><i class="fad fa-shopping-cart" data-id="31" data-kind="gold" data-price="4200"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/whiston.jpeg" alt="" class="w-100 h-75">
+<h5 >Whiston  <span> //</span>  6200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="32" data-kind="whiston" data-price="6200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/ruby.jpeg" alt="" class="w-100 h-75">
+<h5 >Ruby  <span> //</span>  3000MMK</h5> 
+ <div class="view_detail">
+            <a href="" class="btn btn-danger btn-sm" data-id="33" data-kind="ruby" data-price="3000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/pizza.jpeg" alt="" class="w-100 h-75">
+<h5 >Pizza  <span> //</span>  18000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="34" data-kind="pizza" data-price="18000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/pyifish.jpeg" alt="" class="w-100 h-75">
+<h5 >Pyay Gyi Fish  <span> //</span>  8000MMK</h5> 
+ <div class="view_detail">
+            <a href="" class="btn btn-danger btn-sm" data-id="35" data-kind="pyifish" data-price="8000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/montdi.png" alt="" class="w-100 h-75">
+<h5 >Montdi  <span> //</span>  1200MMK</h5>
+ <div class="view_detail">
+            <a href="" class="btn btn-danger btn-sm" data-id="36" data-kind="montdi" data-price="1200"><i class="fad fa-shopping-cart"></i></a>
+          </div> 
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/arrlukyaw.png" alt="" class="w-100 h-75">
+<h5 >Arrlukyaw  <span> //</span>  1200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="37" data-kind="arrlukyaw" data-price="1200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/royald.jpg" alt="" class="w-100 h-75">
+<h5 >RoyalD  <span> //</span>  2000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="38" data-kind="royald" data-price="2000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/Gold-Label.jpg" alt="" class="w-100 h-75">
+<h5 >Gold-Label  <span> //</span>  5200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="39" data-kind="goldlabel" data-price="32000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/grandi.png" alt="" class="w-100 h-75">
+<h5 >Grand Royal  <span> //</span>  5000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="40" data-kind="grandi" data-price="5000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/warhorse.jpg" alt="" class="w-100 h-75">
+<h5 >War Hosre  <span> //</span>  2200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="41" data-kind="warhorse" data-price="2200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/abc.jpg" alt="" class="w-100 h-75">
+<h5 >Abc  <span> //</span>  6000MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="42" data-kind="abc" data-price="6000"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/adman.jpeg" alt="" class="w-100 h-75">
+<h5 >Adman Gold  <span> //</span>  3200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="43" data-kind="adman" data-price="3200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/tiger.jpg" alt="" class="w-100 h-75">
+<h5 >Tiger  <span> //</span>  4200MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="44" data-kind="tiger" data-price="4200"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+
+<div class="col-6 col-md-4 col-lg-3 new_arrival_img_hover">
+  <img src="img/cbber.jpg" alt="" class="w-100 h-75">
+<h5 >Cbeer  <span> //</span>  1800MMK</h5> 
+ <div class="view_detail">
+            <a href="#" class="btn btn-danger btn-sm" data-id="45" data-kind="cbeer" data-price="1800"><i class="fad fa-shopping-cart"></i></a>
+          </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14113.210563827795!2d94.88110237632864!3d20.46082017938953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30b63a98eba7b8f1%3A0xc9dc9d5064409b69!2sYenantha%20Restaurant!5e0!3m2!1sen!2smm!4v1748129511465!5m2!1sen!2smm" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-3"></iframe>
+            </div>
+
+            <div class="d-col-block d-col-lg-block col-lg-6">
+              <ul>
+                <li>FAQ</li>
+                <li>Best Seller</li>
+                <li>Customer Service</li>
+                <li>Contact</li>
+                <a href="" class="w-100" ><i class="fab fa-facebook"></i></a>
+             <a href=""><i class="fab fa-facebook-messenger"></i></a>
+             <a href=""><i class="fab fa-tiktok"></i></a>
+              </ul>
+            </div>
+
+            <hr>
+        <h5 class="text-center">This Code Generated By Me</h5>
+          </div>
+        </div>
+      </footer>
+
+
+</div>
+
+    
+
+ 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="script.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+     -->
+</body>
+</html>
